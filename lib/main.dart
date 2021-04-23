@@ -25,16 +25,27 @@ class ContainerWidget extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter example')
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Container(color: Colors.deepOrange, height: 100, width: 100,),
-          SizedBox(
-            height: 20,
-            width: 20,
-          ),
-          Container(color: Colors.black12, height: 100, width: 100,)
+          Container(color: Colors.red, height: 300,),
+          Container(color: Colors.blue, height: 300,),
+          Container(color: Colors.green, height: 300,),
         ],
       ),
+
+
+      // body: Column(
+      //   children: [
+      //     Container(color: Colors.deepOrange, height: 100, width: 100,),
+      //     SizedBox(
+      //       height: 20,
+      //       width: 20,
+      //     ),
+      //     Container(color: Colors.black12, height: 100, width: 100,)
+      //   ],
+      // ),
+
+
       // body: Container(
       //   child: RaisedButton(
       //     child: Text('Push me!'),
