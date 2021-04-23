@@ -47,6 +47,13 @@ class ContainerWidget extends StatelessWidget {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          print('nice work!');
+        },
+        child: Icon(Icons.stop),
+        backgroundColor: Colors.purpleAccent,
+      ),
 
 
       // body: ListView(
