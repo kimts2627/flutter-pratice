@@ -25,21 +25,33 @@ class ContainerWidget extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter example')
       ),
-      body: Container(
-        child: RaisedButton(
-          child: Text('Push me!'),
-          onPressed: (){
-            print('Yeees!');
-          },
-          onLongPress: (){
-            print('Yeeeeeeees!!!');
-          },
-          color: Colors.deepOrange,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(40)
+      body: Column(
+        children: [
+          Container(color: Colors.deepOrange, height: 100, width: 100,),
+          SizedBox(
+            height: 20,
+            width: 20,
           ),
-        ),
+          Container(color: Colors.black12, height: 100, width: 100,)
+        ],
       ),
+      // body: Container(
+      //   child: RaisedButton(
+      //     child: Text('Push me!'),
+      //     onPressed: (){
+      //       print('Yeees!');
+      //     },
+      //     onLongPress: (){
+      //       print('Yeeeeeeees!!!');
+      //     },
+      //     color: Colors.deepOrange,
+      //     shape: RoundedRectangleBorder(
+      //       borderRadius: BorderRadius.circular(40)
+      //     ),
+      //   ),
+      // ),
+
+
       // body: Container(
       //   height: MediaQuery.of(context).size.height,
       //   width: MediaQuery.of(context).size.width,
@@ -52,6 +64,8 @@ class ContainerWidget extends StatelessWidget {
       //     ],
       //   )
       // )
+
+
       // body: Container(
       //   color: Colors.amber,
       //   // width: 150,
