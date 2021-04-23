@@ -26,15 +26,27 @@ class ContainerWidget extends StatelessWidget {
         title: Text('Flutter example')
       ),
       body: Container(
-        color: Colors.amber,
-        // width: 150,
-        // height: 300,
-        child: Text('Test'),
-        alignment: Alignment.centerLeft,
-        margin: EdgeInsets.all(20),
-        padding: EdgeInsets.all(40),
-      ),
-      
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(color: Colors.redAccent, width: 200, height: 200,),
+            Container(color: Colors.yellow, width: 200, height: 200,),
+          ],
+        )
+      )
+      // body: Container(
+      //   color: Colors.amber,
+      //   // width: 150,
+      //   // height: 300,
+      //   child: Text('Test'),
+      //   alignment: Alignment.centerLeft,
+      //   margin: EdgeInsets.all(20),
+      //   padding: EdgeInsets.all(40),
+      // ),
+
     );
   }
 }
